@@ -6,9 +6,6 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 /* ── Header ── */
@@ -103,13 +100,11 @@ body {
 /* ── Output cards ── */
 
 #lower-grey {
-    flex: 1;
     background: #ededf5;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 1.25rem;
     padding: 2rem 1.5rem;
-    align-content: start;
 }
 
 .output {
