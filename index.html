@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Instantly convert between metric and imperial units — length (meters/feet), volume (liters/gallons), and mass (kilograms/pounds).">
+        <title>Metric ↔ Imperial Unit Converter</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-                
-        <div id="upper-blue">
-            <h2 id="title-text">Metric/Imperial Unit Conversion</h1>
+
+        <header id="upper-blue">
+            <h1 id="title-text">Metric ↔ Imperial</h1>
+            <p id="subtitle">Enter a value to convert all units at once</p>
             <div id="upper-box">
-                <input type="number" id="input-number">
+                <input type="number" id="input-number" placeholder="0" aria-label="Value to convert">
                 <button id="convert-btn">Convert</button>
             </div>
-        </div>
-        
-        <div id="lower-grey">
-                <div class="output">
-                    <h4>Length (Meter/Feet)</h4>
-                    <p id="length" >meters ➞ feet | feet ➞ meters</p>
-                </div>
-                <div class="output">
-                    <h4>Volume (Liters/Gallons)</h4>
-                    <p id="volume" >litres ➞ gallons | gallons ➞ litres</p>
-                </div>
-                <div class="output">
-                    <h4>Mass (Kilograms/Pounds)</h4>
-                    <p id="mass" >kilos ➞ pounds | pounds ➞ kilos</p>
-                </div>
-        </div>
-        <script src="index.js"></script>
+        </header>
+
+        <main id="lower-grey">
+            <div class="output">
+                <h2 class="output-title">Length</h2>
+                <p class="unit-label">Meters / Feet</p>
+                <p id="length" class="result">meters ↔ feet</p>
+            </div>
+            <div class="output">
+                <h2 class="output-title">Volume</h2>
+                <p class="unit-label">Liters / Gallons</p>
+                <p id="volume" class="result">liters ↔ gallons</p>
+            </div>
+            <div class="output">
+                <h2 class="output-title">Mass</h2>
+                <p class="unit-label">Kilograms / Pounds</p>
+                <p id="mass" class="result">kilograms ↔ pounds</p>
+            </div>
+        </main>
+
+        <script src="index.js" defer></script>
     </body>
 </html>
